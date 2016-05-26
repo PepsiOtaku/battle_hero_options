@@ -74,3 +74,22 @@ Debug only commands:
 
 @hero_options_print_attributes - Print the currently set attribute resistances for a particular hero
   - Parameter 1 (number): The ID of the hero
+  
+Examples
+--------
+
+@hero_options_set 3, "two_weapons", 1 - Set "Two Weapons" for hero 3 to "checked"
+@hero_options_set 5, "mighty_guard", 0 - Set "Mighty Guard" for hero 5 to "unchecked"
+@hero_options_set 2, "attribute_resist", 4, "A" - Set Attribute #4 for hero 2 to "A"
+@hero_options_set 2, "attribute_resist", 4, 0   - Set Attribute #4 for hero 2 to "A" (0)
+@hero_options_set 7, "condition_resist", 12, 3 - Set Condition #12 for hero 7 to "D" (3)
+@hero_options_reset_attributes 4 - Reset all attributes for hero 4 to the database default
+
+@hero_options_print_flags 8 - Prints the following to the debug/console window (if enabled):
+-------
+Flags for Klaus:
+  Two Weapons:    1
+  Lock Equipment: 0
+  AI Control:     0
+  Mighty Guard:   1
+-------
